@@ -8,6 +8,9 @@ require('./bootstrap');
 
 window.Vue = require('vue');
 
+Vue.component('like-component', require('./components/LikeComponent.vue').default);
+Vue.component('dis-like-component', require('./components/DisLikeComponent.vue'));
+
 /**
  * The following block of code may be used to automatically register your
  * Vue components. It will recursively scan this directory for the Vue
